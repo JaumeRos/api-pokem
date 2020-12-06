@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="d-flex justify-content-center w-100">
+      <div class="col-8">
+        <h2>These are the pokemon available:</h2>
+          <% @pokemons.each do |pokemon| %>
+          <div class="card border-card no-border h-100">
+            <h2><%= link_to "#{pokemon.name}", pokemon_path(pokemon)%> </h2>
+            <p> Strength: <%= pokemon.char1 %>, Level:  <%= pokemon.level %>  </p>
+          <% end %>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
