@@ -1,0 +1,15 @@
+<div class="container">
+  <h2 class="head m-3">🚀 Pokemon: 🚀</h2>
+    <div class="row row-cols-1 row-cols-lg-2">
+        <% @pokemons["results"].each do |pokemon| %>
+          <div class="col mb-4">
+            <div class="card p-3">
+              <h5 class="card-title"> <%= pokemon["name"].capitalize %></h5>
+              <p class="card-text mb-3"> <%= link_to pokemon["url"] %> </p>
+            </div>
+          </div>
+        <% end %>
+    </div>
+</div>
+
+

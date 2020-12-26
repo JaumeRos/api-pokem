@@ -31,6 +31,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
+gem 'poke-api-v2'
+gem 'faker'
+gem 'httparty', '~> 0.13.7'
 
 group :development, :test do
   gem 'pry-byebug'
