@@ -19,3 +19,11 @@ Pokemon.destroy_all
 # end
 
 # p "You just created #{Pokemon.count} Pokemons"
+all = HTTParty.get('https://pokeapi.co/api/v2/pokemon?&limit=1118')
+
+all["results"].each do |pokemon|
+  Pokemon.create(
+      name: pokemon["name"]
+    )
+end
+

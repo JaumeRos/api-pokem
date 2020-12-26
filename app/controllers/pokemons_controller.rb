@@ -1,6 +1,6 @@
 class PokemonsController < ApplicationController
    def index
-    @pokemons = HTTParty.get('https://pokeapi.co/api/v2/pokemon?&limit=1118')
+    @pokemons = Pokemon.paginate(:page => params[:page], :per_page => 12)
     @pokemon = Pokemon.new
   end
 

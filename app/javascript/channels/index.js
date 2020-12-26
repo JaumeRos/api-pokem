@@ -32,3 +32,5 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   getresult(newInput.value);
 });
+
+

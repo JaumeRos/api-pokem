@@ -1,6 +1,30 @@
-<h1>Welcome home</h1>
+    <div class="container">
+      <h1 style="text-align: center;" class="m-3 boo">🚀 Welcome to Jaume's Pokedex! 🚀</h1>
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col mb-4">
+              <div class="card d-flex align-items-center p-3">
+                <%= image_tag("Charizard.png", class:'card-img-top home-img') %>
+                <div class="card-body">
+                  <h2 class="card-title">Find an ability</h2>
+                  <p class="card-text mb-3"> Have a name of a pokemon ready so you can easily find out its main characteristics  </p>
+                  <%= link_to "Find an ability", new_pokemon_path, class:'btn btn-primary btn-lg form-control' %>
+                </div>
+              </div>
+            </div>
+
+            <div class="col mb-4">
+              <div class="card d-flex align-items-center p-3">
+                <%= image_tag("pikachu.png", class:'card-img-top home-img') %>
+                <div class="card-body">
+                  <h2 class="card-title"> Browse </h2>
+                  <p class="card-text mb-3"> Not sure what you're looking for? Browse through a complete list of all 1118 pokemon available.   </p>
+                  <%= link_to "Browse all Pokemon", pokemons_path, class:'btn btn-primary btn-lg form-control' %>
+                </div>
+              </div>
+            </div>
+          </div>
+     </div>
 
 
-<%= link_to "Pokemon", pokemons_path %>
 
 

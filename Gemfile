@@ -34,6 +34,7 @@ gem 'simple_form'
 gem 'poke-api-v2'
 gem 'faker'
 gem 'httparty', '~> 0.13.7'
+gem 'will_paginate', '~> 3.1.0'
 
 group :development, :test do
   gem 'pry-byebug'
