@@ -10,7 +10,7 @@ const newInput = document.getElementById("new-pokemon");
 const pokeIcon = document.getElementById('poke-icon');
 
 const getresult = (pokemon) => {
-  const baseUrl = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+  const baseUrl = `https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`;
   fetch(baseUrl)
     .then(response => response.json())
     .then((data) => {
